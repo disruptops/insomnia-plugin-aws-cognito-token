@@ -3,6 +3,7 @@
   "version": "0.15.0",
   "description": "Plugin for Insomnia to provide Cognito JWT token from AWS",
   "main": "./src/plugin.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +25,12 @@
     "description": "Plugin for Insomnia to provide Cognito JWT token from AWS"
   },
   "dependencies": {
+    "amazon-cognito-identity-js": "^5.2.7",
     "crypto-js": "^3.3.0",
     "jwt-decode": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
   }
 }
